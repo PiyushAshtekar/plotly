@@ -8,9 +8,9 @@ import streamlit as st
 
 st.set_page_config(layout='wide')
 
-df = pd.read_csv('E:\python\CampusX\project\Campusx\my-dash-app\Project using Plotly\india.csv')
+df = pd.read_csv('india.csv')
 
-latlong = pd.read_csv('E:\python\CampusX\project\Campusx\my-dash-app\Project using Plotly\district wise centroids.csv')
+latlong = pd.read_csv('district wise centroids.csv')
 
 list_of_states = list(df['State'].unique())
 list_of_states.insert(0,'Overall India')
